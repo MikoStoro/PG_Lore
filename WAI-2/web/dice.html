@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DragonScale - Kości</title>
+        <link rel="stylesheet" type="text/css" href ="style2.css" media="screen">
+        <script src="diceScript.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="darkmode.js"></script>
+    </head>
+
+    <body>
+        <div style="text-align:right; min-height: 5vh;">
+            <button id="darkmodeBtn" onClick="changeMode()">Tryb Ciemny</button>
+        </div>
+        <script>setMode()</script>
+            <header>
+                <h1 class="headerElement">DragonScale</h1>
+                <h3 class="headerElement">Gra Fabularna</h3>
+            </header>
+            <nav class=topMenu>
+                <label for="dropdownCheckbox" id="dropdownCheckboxLabel" style="text-align: center; padding:0;"> 
+                    <svg width="40" height="42">
+                        <rect x="0" y="8" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                        <rect x="0" y="18" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                        <rect x="0" y="28" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                    </svg>
+                </label>
+                <input type="checkbox" id="dropdownCheckbox"> 
+                <ul class="topMenu">
+                        <li class="topMenuItem"><a class="topMenuItem" href="index.html">STRONA GŁÓWNA</a></li>
+                        <li class="topMenuItem dropdown">
+                            <a class="topMenuItem" href="tables.html">TABELE</a>
+                            <div class="dropdownContent">
+                                <a href="tables.html#difficultyTab">Trudność Testu</a>
+                                <a href="tables.html#successTab">Rezultat Testu - Sukces</a>
+                                <a href="tables.html#failureTab">Rezultat Testu - Porażka</a>
+                            </div>
+                        </li>
+                        <li class="topMenuItem"><a class="topMenuItem selected" href="dice.html">KOŚCI</a></li>
+                        <li class="topMenuItem"><a class="topMenuItem" href="sheet.html">KARTA POSTACI</a></li>
+                        <li class="topMenuItem"><a class="topMenuItem last" href="gallery.html">GALERIA</a></li>
+                    </ul>
+            </nav>
+            <main>
+            <div>
+                <aside>
+                        <div class="left"></div>
+                </aside>
+                <div id="content">
+                    <p class="first">
+                        Podczas gry w DragonScale, gracze bardzo często muszą wykonywać rzuty kośćmi. Można to uczynić "klasycznie" albo 
+                        przy użyciu umieszczonego poniżej narzędzia
+                    </p>
+                    <p>
+                        Aby ustalić liczbę ścianek kości, którymi zostanie wykonany rzut, użyj suwaka. Obok niego wyświetlona 
+                        zostanie liczba ścianek oraz zestaw wirtualnych kości, którymi zostanie wykonany wirtualny rzut.
+                    </p>
+                    <p>
+                        Po kliknięciu przycisku "Rzut", wynik zostanie wyświetlony na szczycie listy.
+                    </p>
+                    <div>
+                        <div style=" text-align: center; margin-bottom: 3vh;">
+                            <p id="diceDisplay">K12</p>
+                            
+                            <div id="diceRange">
+                                <div id="custom-handle" class="ui-slider-handle"></div>
+                            </div>
+                            <br>
+                            <button id="rollBtn" onClick="roll()">Rzut</button>
+                        </div>
+                        <div>
+                            <table id="rollTab">
+                                <tr>
+                                    <td colspan="2">Wyniki rzutów</td>
+                                </tr>
+                                <tr id = "secondRow">
+                                    <td>Wynik</td><td>Kość</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <aside>
+                        <div class="right"></div>
+                </aside>
+            </div>
+        </main>
+        <footer>
+                <img id="dragonPic" src="dragon.png" alt="Smok">
+        </footer>
+        <script>
+
+            $( document ).ready(function() {
+                var handle = $( "#custom-handle" );
+                        $( "#diceRange" ).slider({
+                            min:2, 
+                            max:30,
+                            step:2,
+                            value:12,
+                            change:function(){updateDiceDisplay()},
+                            
+                            create: function() {
+                            handle.text( $( this ).slider( "value" ) )
+                        },
+                        slide: function( event, ui ) {
+                            handle.text( ui.value )
+                        }
+                        });
+                        $("#rollBtn").button();
+                        
+                        $("#darkmodeBtn").button({
+                        icon: "ui-icon-lightbulb"
+                        });
+            
+            });
+                    
+        </script>
+    </body>
+</html>

@@ -1,0 +1,56 @@
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (szablon2vs19.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(431,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(433,95): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(434,95): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(441,11): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(443,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(444,11): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(459,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(460,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(468,51): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(468,48): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(513,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(514,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(515,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(516,24): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(568,25): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(569,22): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(588,105): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(588,84): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(593,119): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(593,98): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(599,126): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(599,105): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(605,125): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(605,104): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(681,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(694,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(718,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(721,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(726,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(729,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(732,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(736,4): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(765,143): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(765,87): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(772,43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(774,60): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(776,50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(778,64): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(793,36): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(794,40): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(795,45): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(859,48): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(880,36): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(881,40): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(943,130): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(943,80): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(993,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(996,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(999,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(1002,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(1005,3): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(1055,12): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\main.cpp(491): warning C4715: 'setBulletSprite': not all control paths return a value
+  szablon2vs19.vcxproj -> C:\Users\mikos\Desktop\Studia\bulletHell\template-project-2\Debug\BulletHell.exe

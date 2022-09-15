@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DragonScale</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href ="style2.css" media="screen">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="darkmode.js"></script>
+    </head>
+    <body>
+        <div style="text-align:right; min-height: 5vh;">
+            <button id="darkmodeBtn" onClick="changeMode()">Tryb Ciemny</button>
+        </div>
+        <script>setMode()</script>
+            <header>
+                <h1 class="headerElement">DragonScale</h1>
+                <h3 class="headerElement">Gra Fabularna</h3>
+            </header>
+            <nav class=topMenu>
+                <label for="dropdownCheckbox" id="dropdownCheckboxLabel" style="text-align: center; padding:0;"> 
+                    <svg width="40" height="42">
+                        <rect x="0" y="8" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                        <rect x="0" y="18" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                        <rect x="0" y="28" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                    </svg>
+                </label>
+                <input type="checkbox" id="dropdownCheckbox"> 
+                <ul class="topMenu">
+                        <li class="topMenuItem"><a class="topMenuItem" href="index.html">STRONA GŁÓWNA</a></li>
+                        <li class="topMenuItem dropdown">
+                            <a class="topMenuItem" href="tables.html">TABELE</a>
+                            <div class="dropdownContent">
+                                <a href="tables.html#difficultyTab">Trudność Testu</a>
+                                <a href="tables.html#successTab">Rezultat Testu - Sukces</a>
+                                <a href="tables.html#failureTab">Rezultat Testu - Porażka</a>
+                            </div>
+                        </li>
+                        <li class="topMenuItem"><a class="topMenuItem" href="dice.html">KOŚCI</a></li>
+                        <li class="topMenuItem"><a class="topMenuItem" href="sheet.html">KARTA POSTACI</a></li>
+                        <li class="topMenuItem"><a class="topMenuItem last selected" href="gallery.html">GALERIA</a></li>
+                    </ul>
+            </nav>
+            <main>
+            <div>
+                <aside>
+                        <div class="left"></div>
+                </aside>
+                <div id="content">
+                    <p class="first">
+                       Poniżej znajduje się zbiór wybranych ilustracji z podręcznika do DragonScale. Ilustracje zostają powiększone, kiedy znajduje się nad nimi kursor myszy.
+                    </p>
+                    <div style="text-align:center;">
+                        <div class="photoContainer"><label class="galleryLabel" >Nóż</label><img src="galleryPhotos/noz-25.png" class="galleryPhoto" alt="Nóż"></div>
+                        <div class="photoContainer"><label class="galleryLabel">Krótki Miecz</label><img src="galleryPhotos/mieczkrotki-25.png" class="galleryPhoto" alt="Krótki Miecz"></div>
+                        <div class="photoContainer"><label class="galleryLabel">Długi Miecz</label><img src="galleryPhotos/miecz2reczny-25.png" class="galleryPhoto" alt="Długi Miecz"></div>
+                        <div class="photoContainer"><label class="galleryLabel">Sztylet</label><img src="galleryPhotos/sztylet-25.png" class="galleryPhoto" alt="Sztylet"></div>
+                        <div class="photoContainer"><label class="galleryLabel">Topór</label><img src="galleryPhotos/topor-25.png" class="galleryPhoto" alt="Topór"></div>
+                        <div class="photoContainer"><label class="galleryLabel">Pięść</label><img src="galleryPhotos/piesc-25.png" class="galleryPhoto" alt="Pięść"></div>
+                        <div class="photoContainer"><label class="galleryLabel">Bicz</label><img src="galleryPhotos/bicz-25.png" class="galleryPhoto" style="float:none;" alt="Bicz"></div>
+                    </div>
+                  </div>
+                <aside>
+                        <div class="right"></div>
+                </aside>
+            </div>
+        </main>
+        <footer>
+                <img id="dragonPic" src="dragon.png" alt="Smok">
+        </footer>
+        <script>
+            $( document ).ready(function() {
+                $("#darkmodeBtn").button({
+                icon: "ui-icon-lightbulb"
+                });
+            });
+
+        </script>
+    </body>
+</html>

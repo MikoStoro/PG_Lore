@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DragonScale - Tabele</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href ="style2.css" media="screen">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="darkmode.js"></script>
+        <script src="bookmarkScript.js"></script>
+    </head>
+    
+    <body onLoad="init();">
+        <div style="text-align:right; min-height: 5vh;">
+            <button id="darkmodeBtn" onClick="changeMode()">Tryb Ciemny</button>
+        </div>
+        <script>setMode()</script>
+            <header>
+                <h1 class="headerElement">DragonScale</h1>
+                <h3 class="headerElement">Gra Fabularna</h3>
+            </header>
+            <nav class=topMenu>
+                <label for="dropdownCheckbox" id="dropdownCheckboxLabel" style="text-align: center; padding:0;"> 
+                    <svg width="40" height="42">
+                        <rect x="0" y="8" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                        <rect x="0" y="18" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                        <rect x="0" y="28" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                    </svg>
+                </label>
+                <input type="checkbox" id="dropdownCheckbox"> 
+                <ul class="topMenu">
+                        <li class="topMenuItem"><a class="topMenuItem" href="index.html">STRONA GŁÓWNA</a></li>
+                        <li class="topMenuItem dropdown">
+                            <a class="topMenuItem selected" href="tables.html">TABELE</a>
+                            <div class="dropdownContent">
+                                <a href="tables.html#difficultyTab">Trudność Testu</a>
+                                <a href="tables.html#successTab">Rezultat Testu - Sukces</a>
+                                <a href="tables.html#failureTab">Rezultat Testu - Porażka</a>
+                            </div>
+                        </li>
+                        <li class="topMenuItem"><a class="topMenuItem" href="dice.html">KOŚCI</a></li>
+                        <li class="topMenuItem"><a class="topMenuItem" href="sheet.html">KARTA POSTACI</a></li>
+                        <li class="topMenuItem"><a class="topMenuItem last" href="gallery.html">GALERIA</a></li>
+                    </ul>
+            </nav>
+            <main>
+            <div>
+                <aside class="left" style="position: sticky; top:8vh;">
+                        <nav class="left sideMenu">
+                            <ul class="sideMenu">
+                                <li><a class="sideMenuItem" href="#diceTab">Kości</a></li>
+                                <li><a class = "sideMenuItem" href="#difficultyTab">Trudność Testu</a></li>
+                                <li><a class = "sideMenuItem" href="#successTab">Rezultat Testu - Sukces</a></li>
+                                <li><a class = "sideMenuItem" href="#failureTab">Rezultat Testu - Porażka</a></li>
+                            </ul>
+                        </nav>
+                </aside>
+                <div id="content">
+                    <p class="first">
+                        Wiele aspektów rozgrywki w DragonScale jest opisane liczbami.
+                        Poniżej umieszczono tabele, zawierające wszystkie dane przydatne podczas gry.
+                    </p>
+                    <h2 id="diceTab" onClick="bookmark(this.id)">Kości</h2>
+                    <div class="tableContainer">
+                    <table>
+                        <tr>
+                            <td>Liczba Ścianek Kości</td><td>Fizyczne Kości</td>
+                        </tr>
+                        <tr>
+                            <td>K2</td><td>K4/2</td>
+                        </tr>
+                        <tr>
+                            <td>K4, K6, K8, K10, K12</td><td>K4, K6, K8, K10, K12</td>
+                        </tr>
+                        <tr>
+                            <td>K14</td><td>1K10 + 1K4</td>
+                        </tr>
+                        <tr>
+                            <td>K16</td><td>1K10 + 1K6</td>
+                        </tr>
+                        <tr>
+                            <td>K18</td><td>1K10 + 1K8</td>
+                        </tr>
+                        <tr>
+                            <td>K20</td><td>2K10</td>
+                        </tr>
+                        <tr>
+                            <td>K22</td><td>1K12 + 1K10</td>
+                        </tr>
+                        <tr>
+                            <td>K24</td><td>2K12</td>
+                        </tr>
+
+                    </table>
+                    </div>
+
+                    <h2 id="difficultyTab" onClick="bookmark(this.id)">Trudność Testów</h2>
+                    <div class="tableContainer">
+                    <table>                    
+                        <tr>
+                            <td>Nazwa</td><td>Trudność</td><td>Opis</td>
+                        </tr>
+                        <tr>
+                            <td>Trywialny</td><td>3</td><td>Codzienne czynności, które nie wymagają od nikogo większej uwagi</td>
+                        </tr>
+                        <tr>
+                            <td>Łatwy</td><td>6</td><td>Wymaga pewnych umiejętności i skupienia, ale nie przekracza trudnością zwykłych, codziennych wyzwań</td>
+                        </tr>
+                        <tr>
+                            <td>Wymagający</td><td>9</td><td>Sytuacje nietypowe, w których przydatna jest biegłość w testowanej dziedzinie, ale z odrobiną szczęścia może im sprostać laik</td>
+                        </tr>
+                        <tr>
+                            <td>Trudny</td><td>12</td><td>Zadania, których wykonanie jest bardzo mało prawdopodobne bez wykształcenia albo szczególnego uzdolnienia w danej dziedzinie.</td>
+                        </tr>
+                        <tr>
+                            <td>Arcytrudny</td><td>15</td><td>Zadania niewykonalne dla nowicjusza i sprawiające spore trudności wtajemniczonym</td>
+                        </tr>
+                        <tr>
+                            <td>Heroiczny</td><td>20</td><td>Zadania leżące jeszcze w zasięgu ludzkich możliwości, jednak znajdujące się gdzieś na ich granicy</td>
+                        </tr>
+                        <tr>
+                            <td>Legendarny</td><td>25</td><td>Legendy głoszą, że istnieją śmiałkowie zdolni sprostać tym wyzwaniom</td>
+                        </tr>
+                    </table>
+                  </div>
+                  <h2 id="successTab" onClick="bookmark(this.id)">Rezultat Testu - Sukces</h2>
+                  <div class="tableContainer">
+                      <table >
+                          <tr>
+                              <td>Różnica Wyniku i Trudności</td><td>Rezultat Testu</td>
+                          </tr>
+                          <tr>
+                              <td>0 - 1</td><td>Zadnie zostaje wykonane, ale jest o włos od porażki i zwykle coś idzie źle</td>
+                          </tr>
+                          <tr>
+                             <td>2 - 3</td><td>Sukces niepełny, często z jakimiś lekkimi, negatywnymi konsekwencjami</td>
+                          </tr>
+                          <tr>
+                            <td>4 - 5</td><td>Pełny sukces – zadanie zostaje wykonane w pełni</td>
+                          </tr>
+                          <tr>
+                            <td>6 - 9</td><td>Sukces, który ma pewne nieoczekiwane, pozytywne konsekwencje</td>
+                          </tr>
+                          <tr>
+                              <td>10+</td><td>Krytyczny sukces – wszystko idzie tak dobrze, jak to tylko możliwe</td>
+                          </tr>
+                      </table>
+                  </div>
+                  <h2 id="failureTab" onClick="bookmark(this.id)">Rezultat Testu - Porażka</h2>
+                  <div class="tableContainer">
+                      <table >
+                          <tr>
+                              <td>Różnica Wyniku i Trudności</td><td>Rezultat Testu</td>
+                          </tr>
+                          <tr>
+                              <td>1 - 2</td><td>Porażka mająca pewne pozytywne skutki albo zadanie zostaje częściowo wykonane</td>
+                          </tr>
+                          <tr>
+                             <td>3 - 6</td><td>Porażka – zadanie nie zostaje wykonane</td>
+                          </tr>
+                          <tr>
+                            <td>7 - 10</td><td>Porażka skutkująca nieoczekiwanymi, negatywnymi konsekwencjami</td>
+                          </tr>
+                          <tr>
+                            <td>11+</td><td>Krytyczna porażka – wszystko idzie tak źle, jak to tylko możliwe</td>
+                          </tr>
+                      </table>
+                  </div>
+                <aside>
+                        <div class="right"></div>
+                </aside>
+            </div>
+            </div>
+        </main>
+        <footer>
+                <img id="dragonPic" src="dragon.png" alt="Smok">
+        </footer>
+        <script>
+            $( document ).ready(function() {
+                $("#darkmodeBtn").button({
+                icon: "ui-icon-lightbulb"
+                });
+            });
+      </script>
+    </body>
+</html>

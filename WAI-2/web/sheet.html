@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DragonScale</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href ="style2.css" media="screen">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="darkmode.js"></script>
+    </head>
+    <body>
+        <div style="text-align:right; min-height: 5vh;">
+            <button id="darkmodeBtn" onClick="changeMode()">Tryb Ciemny</button>
+        </div>
+        <script>setMode()</script>
+            <header>
+                <h1 class="headerElement">DragonScale</h1>
+                <h3 class="headerElement">Gra Fabularna</h3>
+            </header>
+            <nav class=topMenu>
+                <label for="dropdownCheckbox" id="dropdownCheckboxLabel" style="text-align: center; padding:0;"> 
+                    <svg width="40" height="42">
+                        <rect x="0" y="8" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                        <rect x="0" y="18" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                        <rect x="0" y="28" width="40" height="4" stroke="#cc9900" fill="#cc9900"/>
+                    </svg>
+                </label>
+                <input type="checkbox" id="dropdownCheckbox"> 
+                <ul class="topMenu">
+                        <li class="topMenuItem"><a class="topMenuItem" href="index.html">STRONA GŁÓWNA</a></li>
+                        <li class="topMenuItem dropdown">
+                            <a class="topMenuItem" href="tables.html">TABELE</a>
+                            <div class="dropdownContent">
+                                <a href="tables.html#difficultyTab">Trudność Testu</a>
+                                <a href="tables.html#successTab">Rezultat Testu - Sukces</a>
+                                <a href="tables.html#failureTab">Rezultat Testu - Porażka</a>
+                            </div>
+                        </li>
+                        <li class="topMenuItem"><a class="topMenuItem" href="dice.html">KOŚCI</a></li>
+                        <li class="topMenuItem"><a class="topMenuItem selected" href="sheet.html">KARTA POSTACI</a></li>
+                        <li class="topMenuItem"><a class="topMenuItem last" href="gallery.html">GALERIA</a></li>
+                    </ul>
+            </nav>
+            <main>
+            <div>
+                <aside>
+                        <div class="left"></div>
+                </aside>
+                <div id="content">
+                    <p class="first">
+                        Poniżej możesz wprowadzić Atrybuty stworzonej przez siebie postyaci, aby automatycznie obliczyć wartości wszystkich jej parametrów. <br>
+                        Istnieje także opcja automatycznego wygenerowania wypełnionej karty postaci na podstawie wprowadzonych danych. Aby to uczynić, należy najpierw wypełnić wszystkie pola formularza.
+                        Aby jedynie obliczyć parametry postaci, wystarczy wypełnić pola w sekcji "Atrybuty".
+                    </p>
+                    <form name="charSheetForm" action="sheetComplete.php" method="get">
+                        <p>Atrybuty (od -3 do 5)</p>
+                        <label for="charVit">Witalność</label>&ensp;<input name="charVit" id="charVit" type="range" min="-3" max="5" step="1" value="0"><br>
+                        <label for="charStr">Siła</label>&ensp;<input name="charStr" id="charStr" type="range" min="-3" max="5" step="1" value="0"><br>
+                        <label for="charDex">Zręczność</label>&ensp;<input name="charDex" id="charDex" type="range" min="-3" max="5" step="1" value="0"><br>
+                        <label for="charAgi">Zwinność</label>&ensp;<input name="charAgi" id="charAgi" type="range" min="-3" max="5" step="1" value="0"><br>
+                        <label for="charInt">Inteligencja</label>&ensp;<input name="charInt" id="charInt" type="range" min="-3" max="5" step="1" value="0"><br>
+                        <label for="charWis">Mądrość</label>&ensp;<input name="charWis" id="charWis" type="range" min="-3" max="5" step="1" value="0"><br>
+                        
+                        <p>Tożsamość postaci</p>
+                        <label for="charName">Imię postaci:</label><input type="text" name="charName" id="charName">
+                        <br>
+                        <label for="charRace">Rasa:</label><select name="charRace" id="charRace">
+                            <option value="Falwynn">Falwynn</option>
+                            <option value="Ilvynn">Ilvynn</option>
+                            <option value="Meldar">Meldar</option>
+                            <option value="Irip">Irip</option>
+                            <option value="Urgot">Urgot</option>
+                            <option value="Kłyrg">Kłyrg</option>
+                            <option value="Thorax">Thorax</option>
+                            <option value="Sudurr">Sudurr</option>
+                            <option value="Ekkain">Ekkain</option>
+                        </select>
+                        <br>
+                        Płeć: <br>
+                        <input type="radio" name="gender" id="M"><label for="M">Mężczyzna</label><br>
+                        <input type="radio" name="gender"  id="F"><label for="F">Kobieta</label><br>
+                        <input type="radio" name="gender"  id="N"><label for="N">Brak</label><br>
+                        <br>
+                        <input type="reset"><br>
+                        <input type="submit"><br>
+                    </form>
+                 </div>
+                <aside>
+                        <div class="right"></div>
+                </aside>
+            </div>
+        </main>
+        <footer>
+                <img id="dragonPic" src="dragon.png" alt="Smok">
+        </footer>
+        <script>
+            $( document ).ready(function() {
+                $("#darkmodeBtn").button({
+                icon: "ui-icon-lightbulb"
+                });
+            });
+      </script>
+    </body>
+</html>
