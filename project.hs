@@ -1,7 +1,6 @@
 
 
 module Main where   
-import Data.List
 import Prelude
 
 splitNum :: Integer -> [Integer]
@@ -35,14 +34,11 @@ checkNumber :: Integer -> Bool
 checkNumber n = null[ x | x <- createIntList(n), isPrime x == False] 
 
 
-checkNumberTest :: Integer -> [Integer]
-checkNumberTest n = [ x | x <- createIntList(n), isPrime x] 
-
 projectFunction :: Integer -> [Integer]
 projectFunction n = [x | x<-[1 .. n], checkNumber x]
 
 
 main :: IO ()
-main = do print ("Enter Pascal's row number")
+main = do print ("Enter a number:")
           n <- readLn
-          print ((n :: Integer))
+          print (projectFunction(n :: Integer))
